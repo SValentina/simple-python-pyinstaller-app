@@ -16,7 +16,7 @@ pipeline {
     stage('Test') {
       agent {
         docker {
-          image 'qnib/pytest'
+          image 'grihabor/pytest:python3.7-alpine'
         }
 
       }
